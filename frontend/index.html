@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpsTask</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <p class="eyebrow">DEVOPS PRACTICE PROJECT</p>
+        <h1>OpsTask</h1>
+        <p>Keep the work visible. Ship it reliably.</p>
+      </header>
+
+      <form id="task-form">
+        <input id="title" maxlength="200" placeholder="What needs to be done?" required>
+        <input id="description" maxlength="1000" placeholder="Optional details">
+        <button type="submit">Add task</button>
+      </form>
+
+      <p id="message" role="status"></p>
+      <section id="task-list" aria-label="Tasks"></section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
+
